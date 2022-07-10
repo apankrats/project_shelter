@@ -1,0 +1,906 @@
+@font-face 
+	font-family: Arial, sans-serif
+	src: url("../../assets/fonts/ArialMT.ttf")
+	font-weight: 400
+
+@font-face
+	font-family: Georgia, sans-serof
+	src: url("../../assets/fonts/Georgia.ttf")
+	font-weight: 400
+
+html
+	scroll-behavior: smooth
+
+body
+	font-family: Arial, Helvetica, sans-serif
+	box-sizing: border-box
+	color: #4C4C4C
+
+.body-off
+	overflow: hidden
+
+.hamburger
+	display: none
+
+.link-active
+	padding-bottom: 8px
+	border-bottom: 3px #F1CDB3 solid	
+a:hover
+		cursor: default	
+
+.title
+	font-family: Georgia
+	font-weight: 400
+	font-size: 35px
+	line-height: 45px
+	letter-spacing: 2px
+	color: #545454
+
+.button
+	border: none
+	width: 207px
+	height: 50px
+	border-radius: 100px
+	background: #F1CDB3
+	letter-spacing: 1.5px
+	&:hover
+		cursor: pointer
+		background: #FDDCC4
+		transition: 0.3s all
+	a
+		font-family: Georgia, sans-serif
+		color: #000
+		text-decoration: none
+		&:hover
+			cursor: pointer
+
+
+.container
+	max-width: 1280px
+	margin: 0 auto
+
+.header
+	&-container
+		display: flex
+		padding-top: 60px
+		background: url(../../assets/images/bg.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) 0 0/auto 728px
+	&-logo
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-left: 40px
+		text-decoration: none
+		&:hover
+			cursor: pointer
+	&-title
+		font-family: Georgia, sans-serif
+		font-size: 32px
+		line-height: 36px
+		color:#F1CDB3
+		margin-bottom: 10px
+		font-weight: 400
+		letter-spacing: 2px
+		margin-top: 0
+	&-subtitle
+		font-size: 12px
+		line-height: 15px
+		letter-spacing: 1.7px
+		color: #fff
+		font-weight: 300
+	&-nav
+		margin-left: auto
+		margin-right: 40px
+		.header-logo
+			display: none
+	&-list
+		display: flex
+	&-item
+		list-style-type: none
+		margin-left: 35px
+		font-size: 15px
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: #c9c4c4
+				cursor: pointer
+				transition: 0.3s all
+
+.main
+	&-container
+		display: flex
+		justify-content: space-between
+		height: 727px
+		padding-top: 60px
+		background: url(../../assets/images/bg.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+	&-text
+		margin-top: 163px
+		margin-left: 40px
+	&-title
+		font-family: Georgia
+		font-size: 44px
+		line-height: 57px
+		font-weight: 400
+		width: 310px
+		color: #fff
+		margin-bottom: 41px
+	&-descr
+		font-size: 15px
+		line-height: 24px
+		width: 460px
+		color: #CDCDCD	
+	&-btn
+		margin-top: 42px
+		font-size: 17px
+		line-height: 22px
+	&-bg
+		width: 698px
+		margin-right: 40px
+		img
+			width: 100%
+	&-img
+		width: 100%
+
+.about
+	display: flex
+	justify-content: space-between
+	margin-top: 80px
+	margin-bottom: 90px
+	&-photo
+		width: 300px
+		margin-left: 215px
+		img
+			width: 100%
+	&-text
+		margin-right: 216px
+	&-title
+		width: 370px
+		margin-top: 13px
+		margin-bottom: 24px
+	&-descr
+		width: 430px
+		margin-bottom: 25px
+		font-size: 15px
+		line-height: 24px
+		
+.pets
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding-top: 50px
+	background: #F6F6F6
+	padding-bottom: 100px
+	&-title
+		width: 400px
+		color: #545454
+		text-align: center
+	&-box
+		display: flex
+		align-items: center
+		margin-top: 31px
+	&-prev
+		width: 52px
+		height: 52px
+		margin-right: 7px
+		border: 2px #F1CDB3 solid
+		border-radius: 50%
+		background: #F6F6F6
+		&:hover
+			cursor: pointer
+			background: #FDDCC4
+			transition: 0.3s all
+	&-next
+		width: 52px
+		height: 52px
+		margin-left: 7px
+		border: 2px #F1CDB3 solid
+		border-radius: 50%
+		background: #F6F6F6
+		&:hover
+			cursor: pointer
+			background: #FDDCC4
+			transition: 0.3s all
+	&-prev:hover, &-next:hover
+		cursor: pointer
+	&-cards
+		display: flex
+	&-card
+		width: 270px
+		height: 435px
+		background: #FAFAFA
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 0 45px
+		&:hover
+			cursor: pointer
+			box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+			.pets-info
+				background: #F1CDB3
+				transition: 0.3s all
+	&-name
+		font-family: Georgia, sans-serif
+		font-size: 20px
+		margin-top: 25px
+		letter-spacing: 1.1px
+	&-info
+		margin-top: 30px
+		font-family: Georgia, sans-serif
+		font-size: 17px
+		background: #fff
+		border: 2px #F1CDB3 solid
+		width: 187px
+		height: 52px
+		letter-spacing: 1.1px
+	&-btn
+		margin-top: 60px
+		width: 261px
+		height: 52px
+		letter-spacing: 1.5px
+	&-modal
+		width: 900px
+		height: 500px
+		left: 15%
+		top: 17%
+		margin: 0 auto
+		background: #fff
+		border-radius: 5px
+		display: flex
+		&-window
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(0, 0, 0, 0.6)
+			display: none
+			overflow: hidden
+		&-close
+			width: 52px
+			height: 52px
+			border: 2px #F1CDB3 solid
+			border-radius: 50%
+			background: none
+			top: 20px
+			right: 190px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 0 0 auto
+			span
+				font-size: 30px
+				font-family: Georgia, sans-serif
+			&:hover
+				cursor: pointer
+				background: #FDDCC4
+				transition: 0.3s all
+			&-wrapper
+				max-width: 1004px
+				height: 52px
+				margin: 30px auto 0 auto
+		&-photo
+			width: 500px
+			height: 500px
+			img
+				width: 100%
+				border-radius: 5px
+		&-text
+			width: 400px
+			font-family: Georgia, sans-serif
+			margin: 50px 20px 88px 30px
+		&-name
+			font-size: 35px
+			line-height: 45px
+			font-weight: 300
+			margin: 0
+		&-subname
+			margin-top: 10px
+			font-size: 20px
+		&-descr
+			margin-top: 40px
+		&-info
+			margin-top: 40px
+			padding-left: 0
+			li 
+				list-style-type: none
+				margin-bottom: 10px
+				font-weight: 700
+				span
+					font-weight: 300
+			li:before
+				content: "•"
+				color: #F1CDB3
+				padding-right: 10px
+				
+.help
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 50px
+	padding-bottom: 48px
+	&-title
+		width: 380px
+		text-align: center
+	&-box
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		width: 1026px
+		margin-top: 32px
+	&-item
+		text-align: center
+		margin: 0 57px 55px 60px
+		&:first-child
+			margin-left: 0
+		&:nth-child(5)
+			margin-right: 0
+	&-icon
+		margin-bottom: 24px
+	&-type
+		font-family: Georgia, sans-serif
+		font-size: 20px
+		letter-spacing: 1.3px
+
+.donation
+	background: #F6F6F6
+	display: flex
+	justify-content: space-between
+	padding-bottom: 100px
+	padding-top: 83px
+	&-photo
+		width: 505px
+		margin-left: 183px
+		margin-top: 10px
+		img
+			width: 100%
+	&-text
+		width: 380px
+		margin-right: 182px
+	&-title
+		margin-top: 0
+		margin-bottom: 19px
+		color: #545454
+	&-subtitle
+		font-family: Georgia, sans-serif
+		font-size: 16px
+		color: #545454
+		letter-spacing: 0.4px
+	&-card
+		margin-top: 19px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #F1CDB3
+		width: 349px
+		height: 43px
+		border-radius: 9px
+	&-icon
+		width: 30px
+		margin: 0 15px 0 3px
+	&-num
+		color: #545454
+		font-family: Georgia, sans-serif
+		font-size: 20px
+		margin-right: 15px
+		text-decoration: none
+		&:hover
+			color: #F6F6F6
+			transition: 0.3s all
+			cursor: pointer
+	&-note
+		margin-top: 20px
+		font-size: 12px
+		font-style: italic
+		line-height: 18px
+		color: #B2B2B2
+
+.footer
+	&-container
+		background: url(../../assets/images/bg.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+		display: flex
+		padding-top: 40px
+		height: 315px
+	&-info
+		display: flex
+	&-title-contacts
+		margin-bottom: 40px
+		color: #fff
+	&-title-adress
+		margin-bottom: 34px
+		color: #fff
+	&-contacts
+		width: 278px
+		margin-top: 16px
+		margin-left: 40px
+		letter-spacing: 1.5px
+		margin-right: 160px
+	&-adress
+		width: 302px
+		margin-top: 16px
+		letter-spacing: 1.5px
+	&-place
+		display: flex
+		align-items: center
+		margin-bottom: 32px
+	&-contact
+		display: flex
+		align-items: center
+		margin-bottom: 40px
+		&-img
+			margin-right: 20px
+		&-text
+			font-family: Georgia, sans-serif
+			font-size: 20px
+			color: #F1CDB3
+			text-decoration: none
+			transition: 0.3s all
+		&-text:hover
+				color: #fce6d6
+				transition: 0.3s all
+				cursor: pointer
+	&-photo
+		width: 300px
+		margin-right: 40px
+		margin-left: auto
+		img
+			width: 100%
+
+
+	________________________________________________________________________________________________________________________________________		
+
+
+@media (max-width: 1224px)
+	.container
+		max-width: 1000px
+	.about
+		&-photo
+			margin-left: 100px
+		&-text
+			margin-right: 100px
+	.pets
+		padding-top: 58px
+		&-card
+			display: none
+			margin: 0 20px
+			&:nth-child(1)
+				display: flex
+				margin-left: 5px
+			&:nth-child(2)
+				display: flex
+				margin-right: 5px
+	.help
+		&-box
+			width: 630px
+		&-item
+			width: 170px
+			margin: 0 30px 55px 30px
+			&:nth-child(3n)
+				margin-right: 0
+			&:nth-child(3n + 1)
+				margin-left: 0
+			&:nth-child(5)
+				margin-right: 30px
+			img
+				text-align: center
+	.donation
+		&-photo
+			margin-left: 50px
+		&-text
+			margin-right: 50px	
+	.footer
+		&-info
+			justify-content: center
+		&-container
+			display: block
+			height: 629px
+			padding-top: 15px
+		&-contacts
+			margin-left: 30px
+			margin-right: 30px
+			padding-left: 34px
+		&-contacts, &-place
+			letter-spacing: 1.2px
+		&-adress
+			margin-left: 30px
+			margin-right: 30px
+			padding-right: 34px
+		&-photo
+			margin: 0 auto
+			margin-top: 24px
+
+@media (max-width: 980px)
+	.container
+		max-width: 768px
+	.header
+		&-container
+			padding-top: 30px
+		&-logo
+			width: 25%
+			margin-left: 30px
+		&-nav
+			margin-right: 30px
+			width: 68%
+	.main
+		&-container
+			flex-direction: column
+			align-items: center
+			height: 1015px
+			padding-top: 60px
+		&-text
+			display: flex
+			flex-direction: column
+			margin: 0 0 41px 0
+		&-title
+			margin-top: 0
+		&-bg
+			width: 569px
+			margin-right: 30px
+			margin-left: auto
+		&-btn
+			margin: 42px auto 0 auto
+	.about
+		flex-direction: column
+		align-items: center
+		margin-top: 67px
+		&-photo
+			margin-left: 0
+			order: 2
+			margin-top: 55px
+		&-text
+			margin-right: 0
+			order: 1
+	.pets
+		&-modal
+			width: 630px
+			height: 350px
+			left: 15%
+			top: 17%
+			margin: 0 auto
+			background: #fff
+			border-radius: 5px
+			&-close
+				&-wrapper
+					max-width: 738px
+					margin: 30px auto 0 auto
+			&-text
+				margin: 10px 9px 37px 11px
+			&-subname
+				margin-top: 10px
+			&-descr
+				margin-top: 20px
+				font-size: 13px	
+			&-info
+				margin-top: 20px
+	.donation
+		flex-direction: column
+		align-items: center
+		padding-top: 81px
+		padding-bottom: 96px
+		&-photo
+			margin-left: 0
+			order: 2
+			margin-top: 60px
+		&-text
+			order: 1
+			margin-left: 50px	
+		&-title
+			margin: 0
+			margin-bottom: 19px
+		&-subtitle
+			letter-spacing: 0.4px
+		&-card
+			margin-top: 20px
+		&-icon
+			margin-left: 15px
+		&-num
+			font-size: 21px
+	.footer
+		&-container
+			padding-top: 13px
+		&-photo
+			margin: 0 auto
+			margin-top: 24px
+
+
+			
+@media (max-width: 767px)
+	.hamburger
+		z-index: 2
+		display: block
+		margin-right: 56px
+		width: 30px
+		height: 30px
+		background-color: transparent
+		border: none
+		position: relative
+		box-shadow: none
+		overflow: hidden
+		&:hover
+			cursor: pointer
+		&-overlay
+			display: none
+			position: fixed
+			z-index: 0
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(0, 0, 0, 0.6)
+			display: none
+			overflow: hidden
+			&-active
+				display: block
+		&-active
+			span
+				transform: rotate(90deg)
+				transition: transform 0.3s
+		span
+			position: absolute
+			width: 30px
+			height: 2px
+			background: #F1CDB3
+			left: 0
+			transition: transform 0.3s
+			&::before, &::after
+				content: ""
+				position: absolute
+				display: block
+				left: 0
+				width: 30px
+				height: 2px
+				background: #F1CDB3
+			&::before
+				top: -8px
+			&::after
+				bottom: -8px
+				
+	.title
+		margin: 0 auto
+		font-size: 25px
+		line-height: 33px
+		text-align: center
+		width: 300px
+		letter-spacing: 1.5px
+	.link-active
+		padding-bottom: 0px
+	.container
+		max-width: 680px
+	.header
+		&-container
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&-logo
+			width: 190px
+		&-nav
+			z-index: 1
+			position: fixed
+			margin: 0
+			width: 320px
+			height: 100vh
+			top: 0
+			right: -320px
+			background: #292929
+			transition: 0.3s
+			.header-logo
+				display: block
+				margin-top: 30px
+				margin-left: 10px
+		&-nav-active
+			top: 0
+			right: 0
+			transition: 0.3s
+		&-list
+			align-items: center
+			margin-top: 248px
+			flex-direction: column
+			padding: 0
+		&-item
+			margin: 0
+			text-align: center
+			font-size: 32px
+			line-height: 160%
+			margin-bottom: 40px
+			a
+				&:hover
+					padding-bottom: 0px
+	.main	
+		&-container
+			height: 673px
+			padding-top: 58px
+		&-title
+			font-size: 28px
+			line-height: 33px
+			text-align: center
+		&-descr
+			width: 300px
+			font-size: 15px
+			line-height: 24px
+			text-align: center
+			margin-left: 5px
+		&-bg
+			width: 260px
+			margin-left: 67px
+			margin-bottom: 0
+			img
+				vertical-align: bottom
+		&-btn
+			letter-spacing: 0.6px
+			font-size: 18px
+	.about
+		margin-top: 42px
+		margin-bottom: 42px
+		&-text
+			margin: 0
+		&-title
+			text-align: center
+			margin-bottom: 25px
+		&-descr
+			margin: 0 auto
+			width: 270px
+			margin-bottom: 21px
+			text-align: justify
+		&-photo
+			margin-top: 20px
+			width: 260px
+	.pets
+		padding-top: 37px
+		padding-bottom: 42px
+		&-cards
+			margin-bottom: 20px
+		&-card
+			&:nth-child(1)
+				margin: 0
+			&:nth-child(2)
+				margin: 0
+				display: none
+		&-btn
+			margin-top: 43px
+		&-modal
+			width: 220px
+			height: auto
+			left: 15%
+			top: 17%
+			margin: 0 auto
+			background: #fff
+			border-radius: 5px
+			&-photo
+				display: none
+			&-name
+				text-align: center
+			&-text
+				margin: 10px
+			&-subname
+				text-align: center
+			&-descr
+				text-align: justify
+			&-info
+				margin-top: 20px
+				font-size: 15px
+				line-height: 13px
+			&-close-wrapper
+				width: 300px
+
+	.help
+		margin-top: 42px
+		&-box
+			display: grid
+			width: 290px
+			grid-template-columns: 1fr 1fr
+			gap: 30px
+			margin-top: 40px
+		&-item
+			width: 130px
+			margin: 0
+			&:nth-child(5)
+				margin-right: 0
+			img
+				height: 50px
+		&-icon
+			margin-bottom: 15px
+		&-type
+			font-size: 15px
+			letter-spacing: 1px
+	.donation
+		padding-top: 36px
+		padding-bottom: 36px
+		&-text
+			width: 300px
+			margin: 0
+		&-title
+			text-align: center
+		&-subtitle
+			margin: 0 auto
+			margin-top: 23px
+			width: 275px
+			letter-spacing: 0
+			font-size: 15px
+		&-card
+			width: 280px
+			margin: 0 auto
+			margin-top: 24px
+		&-icon
+			margin-left: 8px
+		&-num
+			font-size: 15px
+		&-note
+			width: 280px
+			margin: 0 auto
+			margin-top: 20px
+			text-align: justify
+		&-photo
+			margin-top: 42px
+			width: 260px
+	.footer
+		&-container
+			height: 780px
+			padding-top: 31px
+		&-info
+			flex-direction: column
+		&-place
+			margin-bottom: 40px
+		&-contact
+			margin-left: 13px
+		&-contacts
+			margin: 0 auto
+			padding: 0			
+		&-adress
+			margin: 0 auto
+			padding: 0
+		&-place
+			margin-bottom: 38px
+		&-title
+			&-contacts, &-adress
+				margin-bottom: 40px
+				width: 278px
+		&-photo
+			margin: 0 auto
+			width: 260px
+			margin-top: 10px
+			margin: 0 auto
+			img
+				vertical-align: bottom
+
+@media (max-width: 460px)
+	.container
+		max-width: 460px
+
+@media (max-width: 375px)
+	.container
+		max-width: 375px
+	
+
+	@media (max-width: 374px)
+		.header
+			&-logo
+				margin-left: 10px
+	@media (min-width: 320px)
+		.container
+			min-width: 320px
+		.pets
+			&-box
+				flex-wrap: wrap
+				justify-content: center
+				margin-top: 40px
+			&-prev
+				margin-right: 40px
+				margin-left: 40px
+				order: 2
+			&-next
+				margin-left: 40px
+				margin-right: 40px
+				order: 3
+
+			
+
+			
+			
+
+
+
+		
+
+
+
+
